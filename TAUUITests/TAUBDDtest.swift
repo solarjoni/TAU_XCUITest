@@ -39,7 +39,7 @@ extension TAUUITestBase {
     }
     
     func thenIShouldSeeThankYouMessage() {
-        XCTContext.runActivity(named: "I should See correct Message") { _ in
+        XCTContext.runActivity(named: "I should See Correct Message") { _ in
             XCTAssertTrue(app.staticTexts["Thanks for Joining!"].exists)
         }
     }
