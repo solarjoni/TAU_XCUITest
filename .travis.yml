@@ -6,8 +6,9 @@ branches:
    - master
 
 before_install:
-  - brew install fastlane
+  - gem install fastlane
 install: true
 script:
+  - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
   - fastlane scan --scheme TAU --device "iPhone 13 Pro Max"
 
