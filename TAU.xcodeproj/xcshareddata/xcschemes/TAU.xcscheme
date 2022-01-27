@@ -51,6 +51,9 @@
                <Test
                   Identifier = "TAUUITests/testLaunchPerformance()">
                </Test>
+               <Test
+                  Identifier = "TAUUITestsLaunchTests">
+               </Test>
             </SkippedTests>
          </TestableReference>
       </Testables>
