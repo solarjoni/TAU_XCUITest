@@ -1,11 +1,3 @@
-//
-//  TAUUITestsLaunchTests.swift
-//  TAUUITests
-//
-//  Created by Jo Ju on 2022-01-23.
-//  Copyright © 2022 Shashikant Jagtap. All rights reserved.
-//
-
 import XCTest
 
 class TAUUITestsLaunchTests: XCTestCase {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F21784327A2C06A00EC1B9C /* TAUSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F21784227A2C06A00EC1B9C /* TAUSteps.swift */; };
+		1F21784527A2C0D000EC1B9C /* TAUElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F21784427A2C0D000EC1B9C /* TAUElements.swift */; };
 		1F2D279C279D9AFF000BFB88 /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */; };
 		1F2D279E279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D279D279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift */; };
 		1F64C98D27A1C78B002674A4 /* TAUUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64C98C27A1C78B002674A4 /* TAUUITestBase.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F21784227A2C06A00EC1B9C /* TAUSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUSteps.swift; sourceTree = "<group>"; };
+		1F21784427A2C0D000EC1B9C /* TAUElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUElements.swift; sourceTree = "<group>"; };
 		1F2D2799279D9AFF000BFB88 /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
 		1F2D279D279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -87,13 +91,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F2D279A279D9AFF000BFB88 /* TAUUITests */ = {
+		1F21784927A2C1D700EC1B9C /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				1F64C98C27A1C78B002674A4 /* TAUUITestBase.swift */,
-				1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1F21784A27A2C1FA00EC1B9C /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				1F21784227A2C06A00EC1B9C /* TAUSteps.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		1F21784B27A2C20600EC1B9C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
 				1F2D279D279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift */,
+				1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */,
 				1F6E15B027A279E800E29728 /* TAUBDDtest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1F21784C27A2C21000EC1B9C /* XCUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				1F21784427A2C0D000EC1B9C /* TAUElements.swift */,
+			);
+			path = XCUIElements;
+			sourceTree = "<group>";
+		};
+		1F2D279A279D9AFF000BFB88 /* TAUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F21784C27A2C21000EC1B9C /* XCUIElements */,
+				1F21784B27A2C20600EC1B9C /* Tests */,
+				1F21784A27A2C1FA00EC1B9C /* Steps */,
+				1F21784927A2C1D700EC1B9C /* Base */,
 			);
 			path = TAUUITests;
 			sourceTree = "<group>";
@@ -230,6 +268,7 @@
 					};
 					1F6E15A627A2795800E29728 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					9B5BC709220F55C20047CFA4 = {
 						CreatedOnToolsVersion = 10.1;
@@ -304,8 +343,10 @@
 			files = (
 				1F2D279C279D9AFF000BFB88 /* TAUUITests.swift in Sources */,
 				1F64C98D27A1C78B002674A4 /* TAUUITestBase.swift in Sources */,
+				1F21784327A2C06A00EC1B9C /* TAUSteps.swift in Sources */,
 				1F2D279E279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift in Sources */,
 				1F6E15B127A279E800E29728 /* TAUBDDtest.swift in Sources */,
+				1F21784527A2C0D000EC1B9C /* TAUElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,16 +453,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JR9R96XDQU;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.TAUBDDtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -430,10 +478,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JR9R96XDQU;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.TAUBDDtest;

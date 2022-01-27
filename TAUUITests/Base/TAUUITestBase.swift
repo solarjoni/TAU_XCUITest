@@ -1,11 +1,3 @@
-//
-//  TAUUITestBase.swift
-//  TAUUITests
-//
-//  Created by Jo Ju on 2022-01-26.
-//  Copyright © 2022 Shashikant Jagtap. All rights reserved.
-//
-
 import XCTest
 
 class TAUUITestBase: XCTestCase {
