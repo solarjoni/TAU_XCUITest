@@ -1,5 +1,6 @@
 language: swift
-osx_image: xcode13.2.1
+os: osx
+osx_image: xcode13.2
 branches:
   only:
    - master
@@ -9,5 +10,4 @@ before_install:
 install: true
 script:
   - fastlane scan --scheme TAU --device "iPhone 13 Pro Max"
-
 
