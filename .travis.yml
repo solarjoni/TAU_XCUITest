@@ -6,7 +6,7 @@ branches:
    - master
 
 before_install:
-  - gem install fastlane --no-ri --no-rdoc --no-document
+  - brew install fastlane
 install: true
 script:
   - fastlane scan --scheme TAU --device "iPhone 13 Pro Max"
