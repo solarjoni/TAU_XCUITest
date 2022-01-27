@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TAUUITests.xctest' tests='9' failures='0'>
+  <testsuite name='TAUUITests.BDDTest' tests='1' failures='0'>
+    <testcase classname='TAUUITests.BDDTest' name='testThankYouMessageInBDDStyle' time='4.359'/>
+  </testsuite>
+  <testsuite name='TAUUITests.TAUEyesTest' tests='1' failures='0'>
+    <testcase classname='TAUUITests.TAUEyesTest' name='testTAUWithEyesXCUI' time='23.982'/>
+  </testsuite>
+  <testsuite name='TAUUITests.TAUUITests' tests='3' failures='0'>
+    <testcase classname='TAUUITests.TAUUITests' name='testAllElementsOnMainScreen' time='2.721'/>
+    <testcase classname='TAUUITests.TAUUITests' name='testLaunchPerformance' time='85.643'/>
+    <testcase classname='TAUUITests.TAUUITests' name='testThankYouMessage' time='3.012'/>
+  </testsuite>
+  <testsuite name='TAUUITests.TAUUITestsLaunchTests' tests='4' failures='0'>
+    <testcase classname='TAUUITests.TAUUITestsLaunchTests' name='testLaunch' time='3.949'/>
+    <testcase classname='TAUUITests.TAUUITestsLaunchTests' name='testLaunch' time='7.014'/>
+    <testcase classname='TAUUITests.TAUUITestsLaunchTests' name='testLaunch' time='4.929'/>
+    <testcase classname='TAUUITests.TAUUITestsLaunchTests' name='testLaunch' time='6.959'/>
+  </testsuite>
+</testsuites>
