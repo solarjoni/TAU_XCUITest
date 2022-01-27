@@ -22,6 +22,10 @@ enum TAUScreen: String {
         case .enrollButton:
             return XCUIApplication().buttons[self.rawValue]
         case .tauLogo:
+            //We can specify different devices
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                return XCUIApplication().images["iPad"]
+            }
             return XCUIApplication().images[self.rawValue]
         }
     }

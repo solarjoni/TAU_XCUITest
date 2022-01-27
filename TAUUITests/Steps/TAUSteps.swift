@@ -23,7 +23,8 @@ extension TAUUITestBase {
     
     func thenIShouldSeeThankYouMessage() {
         XCTContext.runActivity(named: "I should See Correct Message") { _ in
-            XCTAssertTrue(TAUScreen.thankYouMessage.element.exists)
+//            XCTAssertTrue(TAUScreen.thankYouMessage.element.exists)
+            XCTAsyncAssert(TAUScreen.thankYouMessage.element)
             
         }
     }

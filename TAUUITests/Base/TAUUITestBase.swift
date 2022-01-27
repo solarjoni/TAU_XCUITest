@@ -21,4 +21,11 @@ class TAUUITestBase: XCTestCase {
         try? super.tearDownWithError()
         app.terminate()
     }
+    
+    func XCTAsyncAssert( _ element: XCUIElement) {
+        let elementExist = element.waitForExistence(timeout: 10)
+        if elementExist {
+            XCTAssertTrue(element.exists)
+        }
+    }
 }
