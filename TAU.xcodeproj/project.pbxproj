@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2D279C279D9AFF000BFB88 /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */; };
+		1F2D279E279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D279D279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift */; };
+		1F64C98D27A1C78B002674A4 /* TAUUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64C98C27A1C78B002674A4 /* TAUUITestBase.swift */; };
+		1F6E15B127A279E800E29728 /* TAUBDDtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E15B027A279E800E29728 /* TAUBDDtest.swift */; };
 		9B5BC70E220F55C20047CFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC70D220F55C20047CFA4 /* AppDelegate.swift */; };
 		9B5BC710220F55C20047CFA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC70F220F55C20047CFA4 /* ViewController.swift */; };
 		9B5BC713220F55C20047CFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC711220F55C20047CFA4 /* Main.storyboard */; };
@@ -16,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F2D279F279D9AFF000BFB88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B5BC702220F55C20047CFA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B5BC709220F55C20047CFA4;
+			remoteInfo = TAU;
+		};
 		9B5BC71F220F55D20047CFA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B5BC702220F55C20047CFA4 /* Project object */;
@@ -26,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F2D2799279D9AFF000BFB88 /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
+		1F2D279D279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F64C98C27A1C78B002674A4 /* TAUUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestBase.swift; sourceTree = "<group>"; };
+		1F6E15A727A2795800E29728 /* TAUBDDtest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUBDDtest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E15B027A279E800E29728 /* TAUBDDtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUBDDtest.swift; sourceTree = "<group>"; };
 		9B5BC70A220F55C20047CFA4 /* TAU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BC70D220F55C20047CFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5BC70F220F55C20047CFA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +56,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F2D2796279D9AFF000BFB88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E15A427A2795800E29728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B5BC707220F55C20047CFA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2D279A279D9AFF000BFB88 /* TAUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F64C98C27A1C78B002674A4 /* TAUUITestBase.swift */,
+				1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */,
+				1F2D279D279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift */,
+				1F6E15B027A279E800E29728 /* TAUBDDtest.swift */,
+			);
+			path = TAUUITests;
+			sourceTree = "<group>";
+		};
 		9B5BC701220F55C20047CFA4 = {
 			isa = PBXGroup;
 			children = (
 				9B5BC70C220F55C20047CFA4 /* TAU */,
 				9B5BC721220F55D20047CFA4 /* TAUTests */,
+				1F2D279A279D9AFF000BFB88 /* TAUUITests */,
 				9B5BC70B220F55C20047CFA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +113,8 @@
 			children = (
 				9B5BC70A220F55C20047CFA4 /* TAU.app */,
 				9B5BC71E220F55D20047CFA4 /* TAUTests.xctest */,
+				1F2D2799279D9AFF000BFB88 /* TAUUITests.xctest */,
+				1F6E15A727A2795800E29728 /* TAUBDDtest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +144,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1F2D2798279D9AFF000BFB88 /* TAUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2D27A3279D9AFF000BFB88 /* Build configuration list for PBXNativeTarget "TAUUITests" */;
+			buildPhases = (
+				1F2D2795279D9AFF000BFB88 /* Sources */,
+				1F2D2796279D9AFF000BFB88 /* Frameworks */,
+				1F2D2797279D9AFF000BFB88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F2D27A0279D9AFF000BFB88 /* PBXTargetDependency */,
+			);
+			name = TAUUITests;
+			productName = TAUUITests;
+			productReference = 1F2D2799279D9AFF000BFB88 /* TAUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1F6E15A627A2795800E29728 /* TAUBDDtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6E15AF27A2795800E29728 /* Build configuration list for PBXNativeTarget "TAUBDDtest" */;
+			buildPhases = (
+				1F6E15A327A2795800E29728 /* Sources */,
+				1F6E15A427A2795800E29728 /* Frameworks */,
+				1F6E15A527A2795800E29728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAUBDDtest;
+			productName = TAUBDDtest;
+			productReference = 1F6E15A727A2795800E29728 /* TAUBDDtest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9B5BC709220F55C20047CFA4 /* TAU */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B5BC727220F55D20047CFA4 /* Build configuration list for PBXNativeTarget "TAU" */;
@@ -140,21 +220,30 @@
 		9B5BC702220F55C20047CFA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Shashikant Jagtap";
 				TargetAttributes = {
+					1F2D2798279D9AFF000BFB88 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9B5BC709220F55C20047CFA4;
+					};
+					1F6E15A627A2795800E29728 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					9B5BC709220F55C20047CFA4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1320;
 					};
 					9B5BC71D220F55D20047CFA4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 9B5BC709220F55C20047CFA4;
 					};
 				};
 			};
 			buildConfigurationList = 9B5BC705220F55C20047CFA4 /* Build configuration list for PBXProject "TAU" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -168,11 +257,27 @@
 			targets = (
 				9B5BC709220F55C20047CFA4 /* TAU */,
 				9B5BC71D220F55D20047CFA4 /* TAUTests */,
+				1F2D2798279D9AFF000BFB88 /* TAUUITests */,
+				1F6E15A627A2795800E29728 /* TAUBDDtest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F2D2797279D9AFF000BFB88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E15A527A2795800E29728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B5BC708220F55C20047CFA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +298,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F2D2795279D9AFF000BFB88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2D279C279D9AFF000BFB88 /* TAUUITests.swift in Sources */,
+				1F64C98D27A1C78B002674A4 /* TAUUITestBase.swift in Sources */,
+				1F2D279E279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift in Sources */,
+				1F6E15B127A279E800E29728 /* TAUBDDtest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6E15A327A2795800E29728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B5BC706220F55C20047CFA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +336,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F2D27A0279D9AFF000BFB88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B5BC709220F55C20047CFA4 /* TAU */;
+			targetProxy = 1F2D279F279D9AFF000BFB88 /* PBXContainerItemProxy */;
+		};
 		9B5BC720220F55D20047CFA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9B5BC709220F55C20047CFA4 /* TAU */;
@@ -240,6 +368,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1F2D27A1279D9AFF000BFB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JR9R96XDQU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.TAUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TAU;
+			};
+			name = Debug;
+		};
+		1F2D27A2279D9AFF000BFB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JR9R96XDQU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.TAUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TAU;
+			};
+			name = Release;
+		};
+		1F6E15AD27A2795800E29728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JR9R96XDQU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.TAUBDDtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1F6E15AE27A2795800E29728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JR9R96XDQU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.TAUBDDtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		9B5BC725220F55D20047CFA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -266,6 +470,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -291,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -327,6 +532,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -346,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -362,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E8YSTT4EW3;
+				DEVELOPMENT_TEAM = JR9R96XDQU;
 				INFOPLIST_FILE = TAU/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,7 +577,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shashikant.TAU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -382,7 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E8YSTT4EW3;
+				DEVELOPMENT_TEAM = JR9R96XDQU;
 				INFOPLIST_FILE = TAU/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,7 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shashikant.TAU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -402,7 +608,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E8YSTT4EW3;
+				DEVELOPMENT_TEAM = JR9R96XDQU;
 				INFOPLIST_FILE = TAUTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,7 +617,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shashikant.TAUTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAU.app/TAU";
 			};
@@ -423,7 +629,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E8YSTT4EW3;
+				DEVELOPMENT_TEAM = JR9R96XDQU;
 				INFOPLIST_FILE = TAUTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,7 +638,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shashikant.TAUTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAU.app/TAU";
 			};
@@ -441,6 +647,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F2D27A3279D9AFF000BFB88 /* Build configuration list for PBXNativeTarget "TAUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2D27A1279D9AFF000BFB88 /* Debug */,
+				1F2D27A2279D9AFF000BFB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6E15AF27A2795800E29728 /* Build configuration list for PBXNativeTarget "TAUBDDtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6E15AD27A2795800E29728 /* Debug */,
+				1F6E15AE27A2795800E29728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9B5BC705220F55C20047CFA4 /* Build configuration list for PBXProject "TAU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
