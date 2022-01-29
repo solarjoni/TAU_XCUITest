@@ -1,15 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='TAUUITests.xctest' tests='4' failures='1'>
+<testsuites name='TAUUITests.xctest' tests='4' failures='0'>
   <testsuite name='TAUUITests.BDDTest' tests='1' failures='0'>
-    <testcase classname='TAUUITests.BDDTest' name='testThankYouMessageInBDDStyle' time='6.460'/>
+    <testcase classname='TAUUITests.BDDTest' name='testThankYouMessageInBDDStyle' time='3.442'/>
   </testsuite>
-  <testsuite name='TAUUITests.TAUEyesTest' tests='1' failures='1'>
-    <testcase classname='TAUUITests.TAUEyesTest' name='testTAUWithEyesXCUI'>
-      <failure message='Test &apos;Live Demo of EyesXCUI SDK!&apos; of &apos;TAU&apos; detected differences! See details at: https://eyes.applitools.com/app/test-results/00000251758928053665/00000251758928053462?accountId=pP9SUP4uBUOnc_8tVKX_bg~~ (DiffsFoundException)'>TAUUITests/Base/TAUUITestBase.swift:32</failure>
-    </testcase>
+  <testsuite name='TAUUITests.TAUEyesTest' tests='1' failures='0'>
+    <testcase classname='TAUUITests.TAUEyesTest' name='testTAUWithEyesXCUI' time='19.921'/>
   </testsuite>
   <testsuite name='TAUUITests.TAUUITests' tests='2' failures='0'>
-    <testcase classname='TAUUITests.TAUUITests' name='testAllElementsOnMainScreen' time='4.900'/>
-    <testcase classname='TAUUITests.TAUUITests' name='testThankYouMessage' time='5.254'/>
+    <testcase classname='TAUUITests.TAUUITests' name='testAllElementsOnMainScreen' time='5.137'/>
+    <testcase classname='TAUUITests.TAUUITests' name='testThankYouMessage' time='3.191'/>
   </testsuite>
 </testsuites>
