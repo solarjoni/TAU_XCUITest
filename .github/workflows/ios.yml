@@ -33,7 +33,7 @@ jobs:
           xcodebuild build-for-testing -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
       - name: Test
         env:
-          APPLITOOLS_API_KEY: ${{ test.APPLITOOLS_API_KEY }}
+          APPLITOOLS_API_KEY: ${{ secret.APPLITOOLS_API_KEY }}
           APPLITOOLS_BATCH_ID: ${{ github.sha }}
           APPLITOOLS_SERVER_URL : "eyesapi.applitools.com"
           scheme: ${{ 'default' }}
