@@ -3,7 +3,7 @@ import XCTest
 
 extension TAUUITestBase {
     func givenAppIsReady() {
-        XCTContext.runActivity(named: "Given App is Ready") { _ in
+        XCTContext.runActivity(named: "Given App is Ready") { _ in // For reporting activities
         XCTAssertTrue(TAUScreen.enrollButton.element.exists)
         }
     }

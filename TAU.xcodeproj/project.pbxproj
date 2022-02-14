@@ -119,17 +119,6 @@
 			path = Steps;
 			sourceTree = "<group>";
 		};
-		1F21784B27A2C20600EC1B9C /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				1F2D279D279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift */,
-				1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */,
-				1F6E15B027A279E800E29728 /* BDDTest.swift */,
-				1F21784D27A3095700EC1B9C /* TAUEyesTest.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		1F21784C27A2C21000EC1B9C /* XCUIElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,12 +130,23 @@
 		1F2D279A279D9AFF000BFB88 /* TAUUITests */ = {
 			isa = PBXGroup;
 			children = (
+				1F7CB2C527BA4855004437C9 /* Tests */,
 				1F21784C27A2C21000EC1B9C /* XCUIElements */,
-				1F21784B27A2C20600EC1B9C /* Tests */,
 				1F21784A27A2C1FA00EC1B9C /* Steps */,
 				1F21784927A2C1D700EC1B9C /* Base */,
 			);
 			path = TAUUITests;
+			sourceTree = "<group>";
+		};
+		1F7CB2C527BA4855004437C9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D279D279D9AFF000BFB88 /* TAUUITestsLaunchTests.swift */,
+				1F2D279B279D9AFF000BFB88 /* TAUUITests.swift */,
+				1F6E15B027A279E800E29728 /* BDDTest.swift */,
+				1F21784D27A3095700EC1B9C /* TAUEyesTest.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		48A4374FA3C863D0DA0062A3 /* Pods */ = {
